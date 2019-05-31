@@ -1,0 +1,61 @@
+This contains the models and functions as used in:
+
+Rossert C, Solinas S, D'Angelo E, Dean P and Porrill J (2014) Model
+cerebellar granule cells can faithfully transmit modulated firing rate
+signals. Front. Cell. Neurosci. 8:304. doi: 10.3389/fncel.2014.00304
+
+The Model of the Granule cell used is from: Solinas S., Nieus T,
+d'Angelo E. (2010) A Realistic Large-Scale Model of the Cerebellum
+Granular Layer Predicts Circuit Spatio-Temporal Filtering
+Properties. Front Cell Neurosci. 2010;4:12.
+
+(This code is a snapshot from
+https://github.com/croessert/AnalyseGranCellRoessertEtAl14 Version
+4e8ce79. Here, also the resulting simulation results can be found.)
+
+
+1. run ./nrncompule to compile .mod files
+
+2. To run the simulations and plot the figures execute the commands
+below.
+
+3. Figures will be saved to: figs/Pub
+
+
+# FIGURE 1
+python Plots_Openloop_Paper_Methods.py -o fig1
+
+# FIGURE 2:
+python Plots_Openloop_Paper_Methods.py -o fig2
+
+# FIGURE 3:
+python Plots_Openloop_Paper_Results.py -o fig3
+
+# FIGURE 4:
+python Plots_Openloop_Paper_Results.py -o fig4
+
+# FIGURE 5:
+python Plots_Openloop_Paper_Results.py -o fig4b
+
+# FIGURE 6:
+python Plots_Openloop_Paper_Results_syn.py -o fig5
+
+# FIGURE 7:
+python Plots_Openloop_Paper_Results_syn.py -o fig6
+
+# FIGURE 8:
+python Plots_Openloop_Paper_Results_syn.py -o fig7
+
+# FIGURE 9:
+python Plots_Openloop_Paper_Results_syn.py -o fig8b
+
+# FIGURE 10:
+python Plots_Openloop_Paper_Results_syn.py -o fig8a
+
+
+Notes:
+- When running simulations with MPI the number of nodes has to be <=
+  to number of cells, otherwise error is returned.
+
+All analysis scripts were implemented by Christian Rossert
+(christian.a [4t] roessert.de)
